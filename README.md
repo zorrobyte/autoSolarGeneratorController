@@ -22,6 +22,6 @@ The 3rd option for my 3 position switch is to simply do nothing.
 Emergency failsafe:
 I'll likely need to use the Victron's BMS RS232 port to receive data, which adds much complexity. Long story short, I want to kill all loads, period, if the battery bank reaches a critical state. House 12V systems are cutoff by the BSS LVD. The power inverter will only automatically turn off (built in function) if the bank reaches 10V (which is BAD for the batteries). Really "bad" design, imo - this should be user configurable.
 
-So, I'll need to monitor DoD through the BMS's RS232 as a standard check, and force the inverter OFF if it reaches a critical state, regardless of any other conotrol structure. This accounts for the generator running out of fuel, etc.
+So, I'll need to monitor DoD through the BMS's RS232 as a standard check, and force the inverter OFF if it reaches a critical state, regardless of any other control structure. This accounts for the generator running out of fuel, etc.
 
 WIP!
