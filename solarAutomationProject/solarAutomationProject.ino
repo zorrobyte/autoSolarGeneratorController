@@ -53,6 +53,7 @@ int genStop(){
 }
 
 void setup() {
+  //pullups prevent the relays from clicking when Arduino is booting
   pinMode(2, INPUT_PULLUP);
   pinMode(3, INPUT_PULLUP);
   pinMode(4, INPUT_PULLUP);
