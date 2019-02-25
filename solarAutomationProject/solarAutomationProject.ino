@@ -106,7 +106,7 @@ void loop() {
   Serial.println();
 
   delay(1000);// 1 second delay between measurements
-      // Check if any reads failed and exit early (to try again).
+      // Check if any reads failed and trigger fans if failed.
   if (isnan(h) || isnan(t) || isnan(f)) {
     Serial.println("Failed to read from DHT sensor!");
     fanStart();
