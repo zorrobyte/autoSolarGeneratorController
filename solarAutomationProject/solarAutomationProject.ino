@@ -64,6 +64,8 @@ void setup() {
   pinMode(relayPin4, OUTPUT);
   dht.begin();
   pinMode(venusRelay, INPUT);
+  //Startup delay to wait for Pi
+  delay(60000);
 }
 
 void loop() {
@@ -71,8 +73,8 @@ void loop() {
   //test functions
   //genStart();
   //genStop();
-  //invStop();
-  //invStart();
+  //fanStart();
+  //fanStop();
   
 
 //Cooling Fans
