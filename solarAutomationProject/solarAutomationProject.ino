@@ -64,8 +64,12 @@ void setup() {
   pinMode(relayPin4, OUTPUT);
   dht.begin();
   pinMode(venusRelay, INPUT);
+  //stop generator if running
+  genStop();
   //Startup delay to wait for Pi
   delay(60000);
+
+  
 }
 
 void loop() {
